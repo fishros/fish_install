@@ -11,7 +11,7 @@ class Tool(BaseTool):
         self.author = 'Fish'
 
     def install_github(self):
-        CmdTask('sudo wget ttps://github.com/shiftkey/desktop/releases/download/release-2.9.12-linux4/GitHubDesktop-linux-2.9.12-linux4.deb -O /tmp/github.deb', os_command=True).run()
+        CmdTask('sudo wget https://github.com/shiftkey/desktop/releases/download/release-2.9.12-linux4/GitHubDesktop-linux-2.9.12-linux4.deb -O /tmp/github.deb', os_command=True).run()
         CmdTask('sudo dpkg -i  /tmp/github.deb').run()
         CmdTask('sudo apt install /tmp/github.deb -y').run()
 

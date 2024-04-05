@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import os
 
-url_prefix = 'http://mirror.fishros.com/install/'
+url_prefix = 'https://raw.githubusercontent.com/fishros/fish_install/main/'
 
 base_url = url_prefix+'tools/base.py'
 
@@ -18,8 +18,8 @@ tools_type_map = {
 
 
 tools ={
-    1: {'tip':'Installation: ROS (Supports ROS/ROS2, Raspberry Pi/Jetson)',  'type':INSTALL_ROS,     'tool':url_prefix+'tools/tool_install_ros.py' ,'dep':[2,3] },
-    2: {'tip':'Configuration: ROS Environment (Quickly update ROS environment settings, automatically generate environment selection)',     'type':INSTALL_ROS,     'tool':url_prefix+'tools/tool_config_rosenv.py' ,'dep':[] },
+    1: {'tip':'Installation: ROS (Supports ROS/ROS2, Raspberry Pi/Jetson)',  'type':INSTALL_ROS,     'tool':url_prefix+'tools/tool_install_ros.py' ,'dep':[] },
+    # 2: {'tip':'Configuration: ROS Environment (Quickly update ROS environment settings, automatically generate environment selection)',     'type':INSTALL_ROS,     'tool':url_prefix+'tools/tool_config_rosenv.py' ,'dep':[] },
     3: {'tip':'Installation: GitHub Desktop', 'type':INSTALL_SOFTWARE,     'tool':url_prefix+'tools/tool_install_github_desktop.py' ,'dep':[] },
     }
 

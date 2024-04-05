@@ -1,5 +1,5 @@
 mkdir -p /tmp/fishinstall/tools
-wget http://mirror.fishros.com/install/install.py -O /tmp/fishinstall/install.py 2>>/dev/null 
+wget https://raw.githubusercontent.com/fishros/fish_install/main/install.py -O /tmp/fishinstall/install.py 2>>/dev/null 
 source /etc/profile
 # sudo rm /var/cache/apt/archives/lock
 # sudo rm /var/lib/dpkg/lock
